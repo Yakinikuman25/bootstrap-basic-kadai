@@ -22,6 +22,11 @@ p {
 /* section_titleに擬似要素を追加 */
 .section_title::after {
 
+  /* フォントサイズを36px */
+  font-size: 36px;
+  /* フォントサイズの太さ600 基準は400です */
+  font-weight: 600;
+
   /* 擬似要素はデフォルトでインライン要素のためブロック要素に変更 */
   display: block;
 
@@ -143,14 +148,8 @@ p {
 }
   
 /* ----------------------------------------------- アバウト */
-.section_title {
-  /* フォントサイズを36px */
-  font-size: 36px;
-  /* フォントサイズの太さ600 基準は400です */
-  font-weight: 600;
-}
 
-  /* aboutクラスの後に"私たちについて"の文を追加 */
+/* aboutクラスの後に"私たちについて"の文を追加 */
   .about::after{
     content: "私たちについて";
   }
@@ -339,3 +338,6 @@ p {
 .chef::after{
   content: "シェフ";
 }
+.chef_bg{
+    background-color: #fdf5e6;
+  }
